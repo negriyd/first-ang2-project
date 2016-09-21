@@ -20,6 +20,7 @@
     "@angular/platform-browser": "2.0.0",
     "@angular/platform-browser-dynamic": "2.0.0",
     "@angular/router": "3.0.0",
+    "angular2": "^2.0.0-beta.17",
     "core-js": "^2.4.1",
     "rxjs": "5.0.0-beta.12",
     "ts-helpers": "^1.1.1",
@@ -40,5 +41,17 @@
     "ts-node": "1.2.1",
     "tslint": "3.13.0",
     "typescript": "2.0.2"
-  }
+  },
+  "description": "This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/negriyd/first-ang2-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/negriyd/first-ang2-project/issues"
+  },
+  "homepage": "https://github.com/negriyd/first-ang2-project#readme"
 }

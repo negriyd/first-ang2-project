@@ -7,15 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  private clickCount = 0;
-  private clickEvent;
+  clickCount = 0;
+  clickEvent;
+  heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+
+  addHero(newHero: string) {
+    if (newHero) {
+      this.heroes.push(newHero);
+    }
+  }
 
   getMessage() {
-
     return 'Button clicked ' + this.clickCount + ' times';
   }
 
-  clicked(event) {
+  clicked(event: MouseEvent) {
     this.clickCount = this.clickCount + 1;
     this.clickEvent = event;
     console.log(event);
