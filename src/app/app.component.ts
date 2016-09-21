@@ -11,6 +11,7 @@ export class AppComponent {
   private clickEvent;
 
   getMessage() {
+
     return 'Button clicked ' + this.clickCount + ' times';
   }
 
