@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app-root/app.component';
+import { NewCmpComponent } from './components/new-cmp/new-cmp.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NewCmpComponent
   ],
   imports: [
     BrowserModule,

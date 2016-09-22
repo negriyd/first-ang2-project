@@ -1,18 +1,18 @@
+
 <h1>
   {{getMessage()}}
 </h1>
 
-<button (click)="clicked($event)">Click me!</button>
+<button (click)=clicked($event)>Click me!</button>
 
 <h2>
   CtrlKey is pressed: {{isCtrlPressed()}}
 </h2>
 
-<input #newHero
-       (keyup.enter)="addHero(newHero.value)"
-       (blur)="addHero(newHero.value); newHero.value='' ">
-
+<input #newHero (keyup.enter)="addHero(newHero.value)">
 <button (click)=addHero(newHero.value)>Add</button>
 
 <ul><li *ngFor="let hero of heroes">{{hero}}</li></ul>
+
+<app-new-cmp></app-new-cmp>
 
