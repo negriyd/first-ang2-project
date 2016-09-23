@@ -9,7 +9,7 @@ export class AppComponent {
 
   clickCount = 0;
   clickEvent;
-
+  parentCount: number = 0;
   num: number = 1;
 
   getMessage() {
@@ -24,5 +24,13 @@ export class AppComponent {
 
   isCtrlPressed() {
     return this.clickEvent != null ? this.clickEvent.ctrlKey : 'not clicked';
+  }
+
+  onChangeCounter(val: number) {
+    this.parentCount = val;
+  }
+
+  getCounterValue() {
+    return this.parentCount;
   }
 }

@@ -9,6 +9,9 @@
   CtrlKey is pressed: {{isCtrlPressed()}}
 </h2>
 
-<counter [count]="5"></counter>
+Value from Counter : {{getCounterValue()}}
+
+<counter count="1" title="Counter component #1" (result)="onChangeCounter($event)"></counter>
+<counter count="10" title="Counter component #2" (result)="onChangeCounter($event)"></counter>
 <heroList></heroList>
 
