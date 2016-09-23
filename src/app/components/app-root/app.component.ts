@@ -9,13 +9,8 @@ export class AppComponent {
 
   clickCount = 0;
   clickEvent;
-  heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
 
-  addHero(newHero: string) {
-    if (newHero) {
-      this.heroes.push(newHero);
-    }
-  }
+  num: number = 1;
 
   getMessage() {
     return 'Button clicked ' + this.clickCount + ' times';

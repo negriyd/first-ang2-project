@@ -1,0 +1,11 @@
+<div>
+  <hr>
+  <h3>
+    <p style="color:green">HeroList component</p>
+  </h3>
+  <input #newHero (keyup.enter)="addHero(newHero.value)">
+  <button (click)=addHero(newHero.value)>Add</button>
+
+  <ul><li *ngFor="let hero of heroes">{{hero}}</li></ul>
+  <hr>
+</div>

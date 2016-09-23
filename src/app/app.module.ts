@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './components/app-root/app.component';
-import { NewCmpComponent } from './components/new-cmp/new-cmp.component';
+import {Counter} from './components/counter/counter.component';
+import {HeroList} from "./components/heroList/heroList.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewCmpComponent
+    Counter,
+    HeroList
   ],
   imports: [
     BrowserModule,

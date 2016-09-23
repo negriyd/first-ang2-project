@@ -9,10 +9,6 @@
   CtrlKey is pressed: {{isCtrlPressed()}}
 </h2>
 
-<input #newHero (keyup.enter)="addHero(newHero.value)">
-<button (click)=addHero(newHero.value)>Add</button>
-
-<ul><li *ngFor="let hero of heroes">{{hero}}</li></ul>
-
-<app-new-cmp></app-new-cmp>
+<counter [count]="5"></counter>
+<heroList></heroList>
 
